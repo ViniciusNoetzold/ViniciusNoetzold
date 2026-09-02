@@ -1,58 +1,83 @@
-# Olá, eu sou Vinícius de Almeida Noetzold
+<div align="center">
 
-Sou **Analista de Suporte Técnico na Hansen Software** e estudante de **Ciência da Computação**.
+<!-- Hero: Monochrome ASCII Portrait (Types in) + 3D ASCII Wordmark (Rocks in 3D) -->
+<h3><code>vinicius@github ~ $ whoami</code></h3>
 
-No trabalho e nos estudos, gosto de entender como os sistemas se comportam na prática: investigar erros, reproduzir cenários, testar hipóteses, orientar usuários e transformar problemas técnicos em soluções claras.
+<table>
+  <tr>
+    <td valign="top" align="center">
+      <img src="./Vini2-ascii.svg" width="370" alt="Vinícius Noetzold — ASCII portrait" />
+    </td>
+    <td valign="top" align="center">
+      <img src="./wordmark.svg" width="490" alt="Mezzold Studios — 3D ASCII wordmark" />
+    </td>
+  </tr>
+</table>
 
-Tenho interesse especial em **sistemas, APIs, automações, qualidade de software e inteligência artificial**. Meu objetivo é continuar evoluindo na conexão entre suporte técnico, desenvolvimento e QA.
+<br>
+<br>
 
-## Experiência e interesses
+<!-- Animated Contribution Graph: auto-refreshed daily by GitHub Actions -->
+<h3><code>vinicius@github ~ $ ./contributions.sh</code></h3>
 
-- atendimento ao cliente, suporte a usuários e orientação sobre o uso de sistemas;
-- investigação e reprodução de erros;
-- análise de logs e comportamento de sistemas;
-- testes funcionais e validação de correções;
-- documentação de processos e soluções;
-- desenvolvimento de aplicações e APIs;
-- automação de tarefas;
-- bancos de dados e integração entre serviços;
-- uso responsável de inteligência artificial no apoio técnico e no desenvolvimento.
+<img src="./contrib-heatmap.svg" width="860" alt="Vinícius's GitHub contribution graph — auto-refreshed daily" />
 
-## Tecnologias
+<br>
+<br>
 
-```text
-Python • Java • Spring Boot • JavaScript • TypeScript • Node.js
-SQL • SQLite • PostgreSQL • Redis • Docker
-APIs REST • Git • GitHub • Testes de software
-```
+<!-- Links & Social Badges -->
+<h3><code>vinicius@github ~ $ ./links.sh</code></h3>
 
-## Projetos em destaque
+<p><b>Tech Support Analyst @ Hansen Software · Computer Science Student · Systems & Automation Builder</b></p>
 
-### [Mezzold Connect](https://github.com/ViniciusNoetzold/MezzoldConnect)
+<p align="center">
+  <a href="https://www.linkedin.com/in/vin%C3%ADcius-noetzold-02bb12363/">
+    <img src="https://img.shields.io/badge/LinkedIn-Vinícius_Noetzold-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/ViniciusNoetzold">
+    <img src="https://img.shields.io/badge/GitHub-ViniciusNoetzold-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="mailto:noetzoldvini@outlook.com">
+    <img src="https://img.shields.io/badge/Email-noetzoldvini@outlook.com-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" />
+  </a>
+</p>
 
-Aplicação desktop e serviço local para organização de contatos, campanhas, consentimento, histórico, filas e acompanhamento da saúde de números. O projeto utiliza Python, Tkinter, SQLite, TypeScript, Fastify, PostgreSQL, Redis, BullMQ e testes automatizados.
+<br>
+<br>
 
-### [Market System POO](https://github.com/ViniciusNoetzold/MarketSystemPOO)
+<!-- Neofetch System Info -->
+<h3><code>vinicius@github ~ $ neofetch</code></h3>
 
-Sistema de mercado em Python executado no terminal, com cadastro de clientes e produtos, controle de estoque, vendas, persistência em CSV e operações de desfazer utilizando fila e pilha.
+<img src="./info-card.svg" width="560" alt="Vinícius Noetzold — Neofetch Info Card" />
 
-### [API de Saudação com Spring Boot](https://github.com/ViniciusNoetzold/Rest-Api-Spring-Booot)
+<br>
+<br>
 
-API REST acadêmica em Java para praticar Spring Boot, controllers, parâmetros de rota e consulta, Maven e testes de inicialização.
+<!-- Featured Projects -->
+<h3><code>vinicius@github ~ $ ./featured_projects.sh</code></h3>
 
-## O que estou buscando desenvolver
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/MezzoldConnect">📦 Mezzold Connect</a></h4>
+      <p>Aplicação desktop e serviço local para gestão de contatos, campanhas, consentimento, histórico, filas e monitoramento de saúde de números.</p>
+      <p><code>Python</code> <code>Tkinter</code> <code>TypeScript</code> <code>Fastify</code> <code>PostgreSQL</code> <code>Redis</code> <code>BullMQ</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/MarketSystemPOO">🛒 Market System POO</a></h4>
+      <p>Sistema de mercado em terminal, cadastro de clientes e produtos, controle de estoque, vendas, persistência CSV e undo com pilha e fila.</p>
+      <p><code>Python</code> <code>POO</code> <code>Estruturas de Dados</code> <code>CSV</code></p>
+    </td>
+    <td width="33%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/Rest-Api-Spring-Booot">☕ API com Spring Boot</a></h4>
+      <p>API REST acadêmica em Java para aplicação de controllers, parâmetros de rota e consulta, injeção de dependências e testes.</p>
+      <p><code>Java</code> <code>Spring Boot</code> <code>Maven</code> <code>JUnit</code></p>
+    </td>
+  </tr>
+</table>
 
-Quero aprofundar meus conhecimentos em:
+<br>
 
-- desenvolvimento back-end e integração de APIs;
-- automações para suporte e operações;
-- testes automatizados e práticas de QA;
-- observabilidade e investigação de incidentes;
-- aplicações com inteligência artificial;
-- soluções técnicas que sejam simples de operar e fáceis de manter.
-
-## Contato
-
-- [LinkedIn](https://www.linkedin.com/in/vin%C3%ADcius-noetzold-02bb12363/)
-- [E-mail](mailto:noetzoldvini@outlook.com)
-- [GitHub](https://github.com/ViniciusNoetzold)
+</div>

@@ -1,0 +1,12 @@
+# Binaries & Virtualenv
+*.exe
+.venv/
+__pycache__/
+*.pyc
+
+# Local temporary files
+*.jfif
+*.jpeg
+*.jpg
+*.png
+*-ascii-art.txt

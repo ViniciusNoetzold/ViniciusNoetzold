@@ -124,15 +124,17 @@ def build_svg():
     
     curr_y = start_y + 36
     
-    # Key-value rows
+    import html
     for key, val, val_color in INFO_ROWS:
         delay += 0.07
+        safe_key = html.escape(key)
+        safe_val = html.escape(val)
         parts.append(
             f'<g class="line" style="animation-delay: {delay:.2f}s;">'
             f'<text x="24" y="{curr_y}" font-size="12.5">'
-            f'<tspan fill="{C_KEY}" font-weight="600">{key:12}</tspan>'
+            f'<tspan fill="{C_KEY}" font-weight="600">{safe_key:12}</tspan>'
             f'<tspan fill="{C_SEP}">: </tspan>'
-            f'<tspan fill="{val_color}">{val}</tspan>'
+            f'<tspan fill="{val_color}">{safe_val}</tspan>'
             f'</text>'
             f'</g>'
         )

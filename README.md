@@ -61,19 +61,19 @@
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/MezzoldConnect">📦 Mezzold Connect</a></h4>
-      <p>Aplicação desktop e serviço local para gestão de contatos, campanhas, consentimento, histórico, filas e monitoramento de saúde de números.</p>
-      <p><code>Python</code> <code>Tkinter</code> <code>TypeScript</code> <code>Fastify</code> <code>PostgreSQL</code> <code>Redis</code> <code>BullMQ</code></p>
+      <h4><a href="https://github.com/ViniciusNoetzold/MezzoldConnect">⚡ Mezzold Connect</a></h4>
+      <p>Plataforma desktop e microsserviço para gestão de contatos, campanhas em massa, consentimento, filas assíncronas e monitoramento de números.</p>
+      <p><code>Python</code> <code>TypeScript</code> <code>Fastify</code> <code>PostgreSQL</code> <code>Redis</code> <code>BullMQ</code></p>
     </td>
     <td width="33%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/MarketSystemPOO">🛒 Market System POO</a></h4>
-      <p>Sistema de mercado em terminal, cadastro de clientes e produtos, controle de estoque, vendas, persistência CSV e undo com pilha e fila.</p>
-      <p><code>Python</code> <code>POO</code> <code>Estruturas de Dados</code> <code>CSV</code></p>
+      <h4><a href="https://github.com/ViniciusNoetzold/AI-PostGen">🤖 AI-PostGen</a></h4>
+      <p>Pipeline e ferramenta inteligente de automação orientada a IA para geração estruturada de posts e conteúdos para redes sociais.</p>
+      <p><code>Python</code> <code>AI / LLMs</code> <code>REST APIs</code> <code>Automação</code></p>
     </td>
     <td width="33%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/Rest-Api-Spring-Booot">☕ API com Spring Boot</a></h4>
-      <p>API REST acadêmica em Java para aplicação de controllers, parâmetros de rota e consulta, injeção de dependências e testes.</p>
-      <p><code>Java</code> <code>Spring Boot</code> <code>Maven</code> <code>JUnit</code></p>
+      <h4><a href="https://github.com/ViniciusNoetzold/YoutubeTrendVideosFounder">📈 YouTube Trends Founder</a></h4>
+      <p>Mineração de dados e inteligência para descoberta de vídeos em alta, análise de métricas virais e tags em ascensão no YouTube.</p>
+      <p><code>Python</code> <code>Data Mining</code> <code>YouTube API</code> <code>Analytics</code></p>
     </td>
   </tr>
 </table>

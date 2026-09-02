@@ -1,29 +1,71 @@
 #!/usr/bin/env python3
 """
-Scrape real daily contribution counts from GitHub's public, unauthenticated
-contributions endpoint (the same fragment the profile page itself uses) and
-write data/contributions.json with the raw days plus derived stats
-(current streak, longest streak, best day, monthly totals).
+Scrape or query real daily contribution counts from GitHub.
+Uses the GraphQL API when a token (GITHUB_TOKEN / GH_TOKEN) is present for 100% real-time accuracy,
+or falls back to GitHub's public HTML contributions endpoint.
 
-No token, no auth, no GraphQL -- just the public HTML GitHub already serves.
-Run daily by .github/workflows/update-profile-art.yml.
+Run daily / hourly by .github/workflows/update-profile-art.yml.
 """
 import datetime
 import json
 import os
 import re
+import subprocess
 import sys
-
 import requests
 from bs4 import BeautifulSoup
 
 USERNAME = os.environ.get("GH_PROFILE_USER", "ViniciusNoetzold")
-URL = f"https://github.com/users/{USERNAME}/contributions"
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "contributions.json")
 
+def get_token():
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if not token:
+        try:
+            token = subprocess.check_output(["gh", "auth", "token"], encoding="utf-8", stderr=subprocess.DEVNULL).strip()
+        except Exception:
+            token = None
+    return token
 
-def fetch_days():
-    resp = requests.get(URL, headers={"User-Agent": "profile-readme-bot/1.0"}, timeout=30)
+def fetch_days_graphql(token):
+    query = """
+    query GetContributions($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    resp = requests.post(
+        "https://api.github.com/graphql",
+        headers={"Authorization": f"Bearer {token}", "User-Agent": "profile-readme-bot/1.0"},
+        json={"query": query, "variables": {"login": USERNAME}},
+        timeout=30
+    )
+    resp.raise_for_status()
+    payload = resp.json()
+    if "errors" in payload:
+        raise RuntimeError(str(payload["errors"]))
+    weeks = payload["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+    days = []
+    for w in weeks:
+        for d in w["contributionDays"]:
+            days.append({"date": d["date"], "count": d["contributionCount"]})
+    days.sort(key=lambda d: d["date"])
+    return days
+
+def fetch_days_html():
+    url = f"https://github.com/users/{USERNAME}/contributions"
+    resp = requests.get(url, headers={"User-Agent": "profile-readme-bot/1.0"}, timeout=30)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -50,11 +92,21 @@ def fetch_days():
     days.sort(key=lambda d: d["date"])
     return days
 
+def fetch_days():
+    token = get_token()
+    if token:
+        try:
+            print(f"[fetch_contributions] Querying GitHub GraphQL API for {USERNAME}...")
+            return fetch_days_graphql(token)
+        except Exception as e:
+            print(f"[fetch_contributions] GraphQL query failed: {e}. Falling back to HTML scraping...")
+    print(f"[fetch_contributions] Scraping public contributions endpoint for {USERNAME}...")
+    return fetch_days_html()
 
 def compute_current_streak(days):
     idx = len(days) - 1
-    if days[idx]["count"] == 0:
-        idx -= 1  # today isn't over yet -- don't break the streak on it
+    if idx >= 0 and days[idx]["count"] == 0:
+        idx -= 1
     streak = 0
     end_idx = idx
     while idx >= 0 and days[idx]["count"] > 0:
@@ -64,7 +116,6 @@ def compute_current_streak(days):
     if streak == 0:
         return 0, None, None
     return streak, days[start_idx]["date"], days[end_idx]["date"]
-
 
 def compute_longest_streak(days):
     longest = run = 0
@@ -83,11 +134,10 @@ def compute_longest_streak(days):
             run = 0
     return longest, longest_start, longest_end
 
-
 def build_data(days):
     total = sum(d["count"] for d in days)
     active_days = sum(1 for d in days if d["count"] > 0)
-    best = max(days, key=lambda d: d["count"])
+    best = max(days, key=lambda d: d["count"]) if days else {"date": "-", "count": 0}
     cur_len, cur_start, cur_end = compute_current_streak(days)
     long_len, long_start, long_end = compute_longest_streak(days)
 
@@ -100,7 +150,7 @@ def build_data(days):
     return {
         "username": USERNAME,
         "generated_at": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "range": {"start": days[0]["date"], "end": days[-1]["date"]},
+        "range": {"start": days[0]["date"], "end": days[-1]["date"]} if days else {},
         "total_contributions": total,
         "active_days": active_days,
         "avg_per_active_day": round(total / active_days, 1) if active_days else 0,
@@ -111,12 +161,11 @@ def build_data(days):
         "days": days,
     }
 
-
 if __name__ == "__main__":
     days = fetch_days()
     data = build_data(days)
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
-    with open(OUT_PATH, "w") as f:
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     print(f"wrote {OUT_PATH}: {data['total_contributions']} contributions, "
           f"current streak {data['current_streak']['length']}, "

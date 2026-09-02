@@ -137,14 +137,15 @@ for ry, line in enumerate(rows_txt):
 status_line_y = TITLEBAR_H + ART_H + PAD * 0.35
 status_y = status_line_y + 19
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
-parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
-             f'vinicius@github:~$ whoami <tspan fill="{INK}">Vinicius Noetzold</tspan></text>')
-parts.append(f'<rect x="{PAD+230}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
-             f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
-             f'dur="1s" repeatCount="indefinite"/></rect>')
+parts.append(
+    f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
+    f'vinicius@github:~$ whoami <tspan fill="{INK}">Vinícius Noetzold</tspan>'
+    f'<tspan fill="{INK}"> █<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/></tspan>'
+    f'</text>'
+)
 
 parts.append("</svg>")
 svg = "".join(parts)
-with open(OUT, "w") as f:
+with open(OUT, "w", encoding="utf-8") as f:
     f.write(svg)
 print("wrote", OUT, len(svg), "bytes;", CANVAS_W, "x", CANVAS_H)

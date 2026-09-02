@@ -297,6 +297,7 @@ def emit(frames, mode, out, dur=5.0, reveal=1.6, title="vinicius@github: ~$ ./wo
                 f'<animate attributeName="opacity" calcMode="discrete" values="{vals}" '
                 f'keyTimes="{kt}" dur="{dur:.2f}s" begin="{reveal:.2f}s" repeatCount="indefinite"/>'
             )
+            p.append(frame_g(rows, ' opacity="0"').replace("</g>", anim + "</g>"))
     p.append("</svg>")
     svg = "".join(p)
     out_dir = os.path.dirname(os.path.abspath(out))

@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Hero: Monochrome ASCII Portrait (Types in) + 3D ASCII Wordmark (Rocks in 3D) -->
+<!-- Hero: Monochrome ASCII Portrait (Types in) + Handwritten ASCII Signature -->
 <h3><code>vinicius@github ~ $ whoami</code></h3>
 
 <table>
@@ -9,7 +9,7 @@
       <img src="./Vini2-ascii.svg" width="370" alt="Vinícius Noetzold — ASCII portrait" />
     </td>
     <td valign="top" align="center">
-      <img src="./wordmark.svg" width="490" alt="Mezzold Studios — 3D ASCII wordmark" />
+      <img src="./vinicius-wordmark.svg" width="490" alt="Vinícius Noetzold — Calligraphy ASCII Signature" />
     </td>
   </tr>
 </table>
@@ -77,6 +77,14 @@
     </td>
   </tr>
 </table>
+
+<br>
+<br>
+
+<!-- Mezzold Studios ASCII Branding -->
+<h3><code>vinicius@github ~ $ ./mezzold_studios.sh</code></h3>
+
+<img src="./mezzold-studios.svg" width="860" alt="Mezzold Studios — ASCII Branding" />
 
 <br>
 

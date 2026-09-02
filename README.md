@@ -50,7 +50,7 @@
 <!-- Neofetch System Info -->
 <h3><code>vinicius@github ~ $ neofetch</code></h3>
 
-<img src="./info-card.svg" width="560" alt="Vinícius Noetzold — Neofetch Info Card" />
+<img src="./info-card.svg" width="600" alt="Vinícius Noetzold — Neofetch Info Card" />
 
 <br>
 <br>
@@ -60,20 +60,27 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h4><a href="https://github.com/ViniciusNoetzold/MezzoldConnect">⚡ Mezzold Connect</a></h4>
-      <p>Plataforma desktop e microsserviço para gestão de contatos, campanhas em massa, consentimento, filas assíncronas e monitoramento de números.</p>
+      <p>Aplicação desktop e serviço local para gestão de contatos, campanhas, consentimento, filas assíncronas e monitoramento de saúde de números.</p>
       <p><code>Python</code> <code>TypeScript</code> <code>Fastify</code> <code>PostgreSQL</code> <code>Redis</code> <code>BullMQ</code></p>
     </td>
-    <td width="33%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/AI-PostGen">🤖 AI-PostGen</a></h4>
-      <p>Pipeline e ferramenta inteligente de automação orientada a IA para geração estruturada de posts e conteúdos para redes sociais.</p>
-      <p><code>Python</code> <code>AI / LLMs</code> <code>REST APIs</code> <code>Automação</code></p>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/YoutubeTrendVideosFounder">🚀 YouTube Trend & Content Founder</a></h4>
+      <p>Caçador de tendências, extrator de palavras-chave, curador de referências e gerador de roteiros com IA da NVIDIA (NVIDIA NIM) para o YouTube.</p>
+      <p><code>Python</code> <code>NVIDIA NIM IA</code> <code>YouTube Data API</code> <code>Analytics</code></p>
     </td>
-    <td width="33%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/YoutubeTrendVideosFounder">📈 YouTube Trends Founder</a></h4>
-      <p>Mineração de dados e inteligência para descoberta de vídeos em alta, análise de métricas virais e tags em ascensão no YouTube.</p>
-      <p><code>Python</code> <code>Data Mining</code> <code>YouTube API</code> <code>Analytics</code></p>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/QuotePRO_Or-amentos">💼 QuotePRO Orçamentos</a></h4>
+      <p>Software desktop para emissão e cálculo inteligente de orçamentos, controle de compras, fluxo financeiro, relatórios e geração de PDFs.</p>
+      <p><code>React</code> <code>TypeScript</code> <code>Electron</code> <code>Bun</code> <code>SQLite</code> <code>TailwindCSS</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/EduSystem">🎓 EduSystem</a></h4>
+      <p>Plataforma desktop de gestão educacional completa com UI glassmorphism, controle de turmas/alunos, chamadas, relatórios e quadro interativo.</p>
+      <p><code>React</code> <code>Vite</code> <code>Node.js / Express</code> <code>Electron</code> <code>SQLite</code></p>
     </td>
   </tr>
 </table>

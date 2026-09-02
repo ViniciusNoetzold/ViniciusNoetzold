@@ -12,8 +12,8 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "info-card.
 STATIC = bool(os.environ.get("STATIC"))
 
 # Canvas sizing to match the portrait aspect ratio when displayed at 490px wide
-CANVAS_W = 560
-CANVAS_H = 584
+CANVAS_W = 620
+CANVAS_H = 460
 
 BG = "#0d1117"
 BG2 = "#111722"
@@ -46,7 +46,7 @@ INFO_ROWS = [
     ("Languages", "Python, Java, TypeScript, JavaScript, SQL", C_ACCENT),
     ("Backend", "Spring Boot, Fastify, Node.js, REST APIs", C_VAL),
     ("Data & Tools", "PostgreSQL, Redis, SQLite, Docker, Git", C_VAL),
-    ("Highlights", "Mezzold Connect, Market System POO", C_PINK),
+    ("Highlights", "Mezzold Connect, YouTube Trend, QuotePRO, EduSystem", C_PINK),
     ("Status", "Connecting Support, Dev and Quality", C_ACCENT),
 ]
 
@@ -176,16 +176,10 @@ def build_svg():
     parts.append(f'<line x1="0" y1="{curr_y-16}" x2="{CANVAS_W}" y2="{curr_y-16}" stroke="{FRAME}" stroke-opacity="0.6"/>')
     parts.append(
         f'<text x="24" y="{curr_y + 4}" fill="{TITLE_TEXT}" font-size="12">'
-        f'vinicius@github:~$ <tspan fill="{C_ACCENT}">uptime --pretty</tspan></text>'
-    )
-    parts.append(
-        f'<text x="220" y="{curr_y + 4}" fill="{C_VAL}" font-size="12">'
-        f'up and coding</text>'
-    )
-    parts.append(
-        f'<rect x="330" y="{curr_y - 7}" width="7" height="13" fill="{C_VAL}">'
-        f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>'
-        f'</rect>'
+        f'vinicius@github:~$ <tspan fill="{C_ACCENT}">uptime --pretty</tspan> '
+        f'<tspan fill="{C_VAL}">up and coding</tspan>'
+        f'<tspan fill="{C_VAL}"> █<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/></tspan>'
+        f'</text>'
     )
     
     parts.append('</svg>')

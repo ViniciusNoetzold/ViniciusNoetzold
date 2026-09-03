@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ================================================================= -->
-<!-- HERO: IDENTITY & FLUID CYBER-WAVE TERMINAL                        -->
+<!-- HERO: IDENTITY & SLANT BANNER                                     -->
 <!-- ================================================================= -->
 <h3><code>vinicius@github ~ $ ./boot_system.sh --identity=cyberpunk</code></h3>
 
@@ -70,12 +70,24 @@
 <br>
 
 <!-- ================================================================= -->
-<!-- RETRO SCREENSAVER LAB: PIPES PROCEDURAL RUNTIME                   -->
+<!-- RETRO SCREENSAVER LAB: PIPES PROCEDURAL RUNTIME (INFINITE LOOP)   -->
 <!-- ================================================================= -->
-<h3><code>vinicius@github ~ $ ./pipes.sh --screensaver --ambient</code></h3>
+<h3><code>vinicius@github ~ $ ./pipes.sh --screensaver --loop=indefinite</code></h3>
 
 <p align="center">
-  <img src="./art/pipes-screensaver.svg" width="860" alt="Pipes.sh Retro Terminal Screensaver" />
+  <img src="./art/pipes-screensaver.svg" width="860" alt="Pipes.sh Retro Terminal Screensaver with Infinite Loop" />
+</p>
+
+<br>
+<br>
+
+<!-- ================================================================= -->
+<!-- BOTANICAL MATRIX: LÍRIO GRANDE EM CASCATA DIGITAL                  -->
+<!-- ================================================================= -->
+<h3><code>vinicius@github ~ $ ./botanical_matrix.sh --flower=lirio --edition=big --anim=cascade</code></h3>
+
+<p align="center">
+  <img src="./art/lirio-cascade.svg" width="860" alt="Lírio Grande em Cascata Digital Matrix" />
 </p>
 
 <br>
@@ -117,7 +129,7 @@
 <br>
 
 <!-- ================================================================= -->
-<!-- EASTER EGGS & ARTISTIC VAULT: PRAISE THE SUN & BOTANICAL GALLERY   -->
+<!-- ARTISTIC SANCTUARY: CREATION OF ADAM & PRAISE THE SUN             -->
 <!-- ================================================================= -->
 <h3><code>vinicius@github ~ $ ./gallery.sh --sanctuary --easter-eggs</code></h3>
 
@@ -128,8 +140,8 @@
       <img src="./art/hands-signature.svg" width="420" alt="Connecting Hands ASCII Art" />
     </td>
     <td width="50%" align="center" valign="top">
-      <p><b>🌿 Caligrafia Botânica · Lírio TrueColor</b></p>
-      <img src="./art/lirio-signature.svg" width="420" alt="Lírio Calligraphy Signature" />
+      <p><b>🧑‍💻 Vinícius Noetzold · Monospaced Matrix Portrait</b></p>
+      <img src="./art/vini-portrait.svg" width="420" alt="Vinícius Noetzold Portrait" />
     </td>
   </tr>
   <tr>
@@ -142,21 +154,11 @@
       <img src="./art/the-sun-signature.svg" width="420" alt="The Sun Signature" />
     </td>
   </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <p><b>🐧 Tux & Pingu · Linux Kernel Mascot</b></p>
-      <img src="./art/pingu-ascii.svg" width="420" alt="Pingu ASCII Terminal" />
-    </td>
-    <td width="50%" align="center" valign="top">
-      <p><b>🧑‍💻 Vinícius Noetzold · Monospaced Matrix Portrait</b></p>
-      <img src="./art/vini-portrait.svg" width="420" alt="Vinícius Noetzold Portrait" />
-    </td>
-  </tr>
 </table>
 
 <!-- Deep Art Expansion (Expandable) -->
 <details>
-  <summary><b>✨ [ Clique para Expandir o Acervo Completo em Alta Definição (Dark Souls III, Constelação & Cascata) ]</b></summary>
+  <summary><b>✨ [ Clique para Expandir o Acervo Completo em Alta Definição (Dark Souls III, Solaire Big & Cosmos) ]</b></summary>
   <br>
   <p align="center">
     <b>⚔️ Dark Souls III Epic Banner</b><br>
@@ -164,13 +166,13 @@
   </p>
   <br>
   <p align="center">
-    <b>🌌 Constelação & Cosmos ASCII</b><br>
-    <img src="./art/stars-ascii.svg" width="840" alt="Constellation & Cosmos ASCII Art" />
+    <b>☀️ Solaire of Astora — Full Scale Knight</b><br>
+    <img src="./art/solaire-big.svg" width="840" alt="Solaire of Astora Full Scale Artwork" />
   </p>
   <br>
   <p align="center">
-    <b>🌧️ Cascata Digital Matrix — Lírio Gigante</b><br>
-    <img src="./art/lirio-cascade.svg" width="840" alt="Lírio Grande em Cascata Digital" />
+    <b>🌌 Constelação & Cosmos ASCII</b><br>
+    <img src="./art/stars-ascii.svg" width="840" alt="Constellation & Cosmos ASCII Art" />
   </p>
 </details>
 

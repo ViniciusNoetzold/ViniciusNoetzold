@@ -136,22 +136,22 @@
 <table>
   <tr>
     <td width="50%" align="center" valign="top">
-      <p><b>🤝 The Creation of Adam · Hands ASCII TrueColor</b></p>
-      <img src="./art/hands-signature.svg" width="420" alt="Connecting Hands ASCII Art" />
+      <p><b>🔥 Bonfire Lit · Dark Souls Shrine</b></p>
+      <img src="./art/bonfire.svg" width="420" alt="Dark Souls Bonfire Lit Fire" />
     </td>
-    <td width="50%" align="center" valign="top">
-      <p><b>🧑‍💻 Vinícius Noetzold · Monospaced Matrix Portrait</b></p>
-      <img src="./art/vini-portrait.svg" width="420" alt="Vinícius Noetzold Portrait" />
-    </td>
-  </tr>
-  <tr>
     <td width="50%" align="center" valign="top">
       <p><b>\[T]/ Solaire of Astora · Praise the Sun</b></p>
       <img src="./art/solaire-signature.svg" width="420" alt="Solaire Praise the Sun Signature" />
     </td>
+  </tr>
+  <tr>
     <td width="50%" align="center" valign="top">
       <p><b>☀️ The Sun Sigil · Warrior of Sunlight</b></p>
       <img src="./art/the-sun-signature.svg" width="420" alt="The Sun Signature" />
+    </td>
+    <td width="50%" align="center" valign="top">
+      <p><b>🤝 The Creation of Adam · Hands ASCII TrueColor</b></p>
+      <img src="./art/hands-signature.svg" width="420" alt="Connecting Hands ASCII Art" />
     </td>
   </tr>
 </table>

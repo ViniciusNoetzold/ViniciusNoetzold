@@ -13,7 +13,7 @@
       </a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="https://github.com/ViniciusNoetzold/Mezzold-TermArt">
+      <a href="https://mezzoldstudio.com.br/">
         <img src="./art/mezzold-slant.svg" width="440" alt="Mezzold Studios — Slant Terminal Art" />
       </a>
     </td>
@@ -70,30 +70,6 @@
 <br>
 
 <!-- ================================================================= -->
-<!-- RETRO SCREENSAVER LAB: PIPES PROCEDURAL RUNTIME (INFINITE LOOP)   -->
-<!-- ================================================================= -->
-<h3><code>vinicius@github ~ $ ./pipes.sh --screensaver --loop=indefinite</code></h3>
-
-<p align="center">
-  <img src="./art/pipes-screensaver.svg" width="860" alt="Pipes.sh Retro Terminal Screensaver with Infinite Loop" />
-</p>
-
-<br>
-<br>
-
-<!-- ================================================================= -->
-<!-- BOTANICAL MATRIX: LÍRIO GRANDE EM CASCATA DIGITAL                  -->
-<!-- ================================================================= -->
-<h3><code>vinicius@github ~ $ ./botanical_matrix.sh --flower=lirio --edition=big --anim=cascade</code></h3>
-
-<p align="center">
-  <img src="./art/lirio-cascade.svg" width="860" alt="Lírio Grande em Cascata Digital Matrix" />
-</p>
-
-<br>
-<br>
-
-<!-- ================================================================= -->
 <!-- FEATURED PROJECTS                                                 -->
 <!-- ================================================================= -->
 <h3><code>vinicius@github ~ $ ./featured_projects.sh</code></h3>
@@ -101,26 +77,26 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/MezzoldConnect">⚡ Mezzold Connect</a></h4>
-      <p>Aplicação desktop e serviço distribuído para campanhas, consentimento, mensageria em lote, filas assíncronas e monitoramento de canais.</p>
-      <p><code>Python</code> <code>TypeScript</code> <code>Fastify</code> <code>PostgreSQL</code> <code>Redis</code> <code>BullMQ</code></p>
-    </td>
-    <td width="50%" valign="top">
       <h4><a href="https://github.com/ViniciusNoetzold/YoutubeTrendVideosFounder">🚀 YouTube Trend & Content Founder</a></h4>
       <p>Curadoria e caça inteligente de tendências com IA (NVIDIA NIM), extração de keywords em tempo real e orquestração de scripts para criadores.</p>
       <p><code>Python</code> <code>NVIDIA NIM AI</code> <code>YouTube API</code> <code>Data Mining</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/ViniciusNoetzold/Mezzold-TermArt">🎨 Mezzold TermArt Suite</a></h4>
-      <p>Suite completa e modular de arte vetorial em terminal: conversor Chafa (C), ASCII TrueColor 24-bit, 3D skyline, tipografia FIGlet e gravador VHS.</p>
-      <p><code>Python</code> <code>FastAPI</code> <code>SVG 60fps</code> <code>Chafa C</code> <code>VHS Go</code></p>
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/ViniciusNoetzold/QuotePRO_Or-amentos">💼 QuotePRO Orçamentos</a></h4>
       <p>Software desktop para cálculo inteligente de orçamentos, emissão rápida de ordens de serviço, controle financeiro e exportação de PDFs de alta definição.</p>
       <p><code>React</code> <code>TypeScript</code> <code>Electron</code> <code>Bun</code> <code>SQLite</code> <code>TailwindCSS</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/Rest-Api-Spring-Booot">⚡ Spring Boot REST API</a></h4>
+      <p>API RESTful robusta em Java e Spring Boot com arquitetura em camadas, validação de requisições, controllers e testes unitários com JUnit e Maven.</p>
+      <p><code>Java</code> <code>Spring Boot</code> <code>REST API</code> <code>Maven</code> <code>JUnit</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/ViniciusNoetzold/MarketSystemPOO">🐍 MarketSystem POO</a></h4>
+      <p>Sistema de gestão comercial em Python aplicando programação orientada a objetos (POO), controle de estoque, vendas e persistência CSV.</p>
+      <p><code>Python</code> <code>POO</code> <code>Data Structures</code> <code>CSV</code> <code>CLI</code></p>
     </td>
   </tr>
 </table>
@@ -190,7 +166,7 @@
 <br>
 
 <p align="center">
-  <sub>Built with passion & terminal artistry using <a href="https://github.com/ViniciusNoetzold/Mezzold-TermArt"><b>Mezzold TermArt Suite</b></a> · © 2026 Vinícius Noetzold</sub>
+  <sub>Built with passion & terminal artistry using <a href="https://mezzoldstudio.com.br/"><b>Mezzold Studios</b></a> · © 2026 Vinícius Noetzold</sub>
 </p>
 
 </div>

@@ -46,7 +46,7 @@ INFO_ROWS = [
     ("Languages", "Python, Java, TypeScript, JavaScript, SQL", C_ACCENT),
     ("Backend", "Spring Boot, Fastify, Node.js, REST APIs", C_VAL),
     ("Data & Tools", "PostgreSQL, Redis, SQLite, Docker, Git", C_VAL),
-    ("Highlights", "Mezzold Connect, YouTube Trend, QuotePRO, EduSystem", C_PINK),
+    ("Highlights", "YouTube Trend AI, QuotePRO, Spring Boot, MarketSystem", C_PINK),
     ("Status", "Connecting Support, Dev and Quality", C_ACCENT),
 ]
 
